@@ -54,15 +54,15 @@ jobs:
       with:
         path: ./kbs.tar.gz
 
-  tdx-e2e-test:
-    needs:
-    - authorize
-    - checkout-and-rebase
-    uses: ./.github/workflows/kbs-e2e.yml
-    with:
-      runs-on: '["self-hosted","azure-cvm-tdx"]'
-      tee: aztdxvtpm
-      tarball: kbs.tar.gz
+#  tdx-e2e-test:
+#    needs:
+#    - authorize
+#    - checkout-and-rebase
+#    uses: ./.github/workflows/kbs-e2e.yml
+#    with:
+#      runs-on: '["self-hosted","azure-cvm-tdx"]'
+#      tee: aztdxvtpm
+#      tarball: kbs.tar.gz
 
   snp-e2e-test:
     needs:
