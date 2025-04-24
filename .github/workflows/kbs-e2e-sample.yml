@@ -1,6 +1,10 @@
 name: KBS e2e (Sample TEE)
 
 on:
+  push:
+    branches:
+      - main
+      - ci-test
   pull_request:
     branches: [ "main" ]
 

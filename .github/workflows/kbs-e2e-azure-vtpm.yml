@@ -4,6 +4,7 @@ on:
   push:
     branches:
     - main
+    - ci-test
   # Note on repository checkout: pull_request_target sets `GITHUB_SHA` to the
   # "last commit on the PR base branch", meaning that by default `actions/checkout`
   # is going to checkout the repository main branch. In order to pick up the pull
